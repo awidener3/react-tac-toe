@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# React-Tac-Toe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🔨 Tasks
 
-## Available Scripts
+This project serves as an introduction into React, where I will follow along the official [reactjs.org tutorial](https://reactjs.org/tutorial/tutorial.html) for getting started with React. These will also serve as personal notes where I will be collecting important information into one project to refer back to.
 
-In the project directory, you can run:
+## 📝 Notes
 
-### `npm start`
+### 🧩 React & Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+JavaScript **library** for building user interfaces by creating complex layouts from small pieces of code called components
+  * **React**: JavaScript Library for UI
+  * **Component**: Piece of code in React used to make UI via virtual DOM
+  
+Components allow the DOM to "update" efficiently and re-render the page. One way to create a component is with a `React.Component` subclass.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```js
+class Card extends React.Component {
+    render() {
+        // Can only return one thing, but can be nested within div
+        return (
+            <div className="card">
+                <h1>{this.props.title}</h1>
+                <p>Card text goes here...</p>
+            </div>
+        );
+    }
+}
 
-### `npm test`
+// Usage: <Card title="Card Title">
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Card is a **React component class/type** which takes in the parameter `title`, which is a `prop` or property. props can be called whatever you want and are used within curly braces `{}`.
 
-### `npm run build`
+`render()` returns a **React element** which describes what will be rendered.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The text within the `return()` is called **JSX**, which is essentially a representation of HTML inside of JavaScript.
