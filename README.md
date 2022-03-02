@@ -1,5 +1,7 @@
 # React-Tac-Toe
 
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
 ## 🔨 Tasks
 
 This project serves as an introduction into React, where I will follow along the official [reactjs.org tutorial](https://reactjs.org/tutorial/tutorial.html) for getting started with React. These will also serve as personal notes where I will be collecting important information into one project to refer back to.

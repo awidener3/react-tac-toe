@@ -14,7 +14,8 @@ class Square extends React.Component {
 class Board extends React.Component {
 	// Calls the Square React component
 	renderSquare(i) {
-		return <Square />;
+		// pass a prop called 'value'
+		return <Square value={i} />;
 	}
 
 	// Renders 9 squares
